@@ -1,0 +1,20 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  flex-basis: 60px;
+  flex-grow: 0;
+}
+
+.center {
+  flex-grow: 1;
+}
+
+.bottom {
+  flex-basis: 60px;
+  flex-grow: 0;
+}
+

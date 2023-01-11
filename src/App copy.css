@@ -1,0 +1,53 @@
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 48px;
+  text-align: left;
+  background: #fcd7d7;
+  color: rgb(23, 27, 35);
+  flex-grow: 0;
+}
+
+.footer {
+  height: 24px;
+  text-align: center;
+  background: #fcd7d7;
+  color: #555;
+  flex-grow: 0;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+
+
+.leftSide {
+  /* 两个边栏的宽度设为12em */
+  flex: 0 0 40px;
+}
+
+.componentPane {
+  flex: 0 0 400px;
+}
+
+.center {
+  flex: 1;
+}
+
+.right {
+  /* 两个边栏的宽度设为12em */
+  flex: 0 0 400px;
+}
+
+.holyGrailNav {
+  /* 导航放到最左边 */
+  order: -1;
+
+}
+

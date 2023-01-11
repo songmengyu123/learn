@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+        html,body,div,span,applet,object,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	font-weight:normal;
+	vertical-align:baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display:block;
+}
+ol,ul,li {
+	list-style:none;
+}
+blockquote,q {
+	quotes:none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+	content:'';
+	content:none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+th,td {
+	vertical-align:middle;
+}
+/* custom */
+a {
+	outline:none;
+	color:#16418a;
+	text-decoration:none;
+	-webkit-backface-visibility:hidden;
+}
+a:focus {
+	outline:none;
+}
+input:focus,select:focus,textarea:focus {
+	outline:-webkit-focus-ring-color auto 0;
+}
+    </style>
+
+</head>
+<body>
+	<style>
+		.HolyGrail {
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+		}
+
+		header {
+		height: 48px;
+		text-align: left;
+		background: #fcd7d7;
+		color: rgb(23, 27, 35)
+		ffont-family: Arial,Helvetica,sans-serif;
+		font-size: 24px;
+		}
+
+		footer {
+		height: 24px;
+		text-align: center;
+		background: #fcd7d7;
+		color: #555
+		}
+
+		.HolyGrail-body {
+		display: flex;
+		flex: 1;
+		}
+
+		.HolyGrail-content {
+		flex: 1;
+		}
+
+		.HolyGrail-ads {
+		/* 两个边栏的宽度设为12em */
+		flex: 0 0 12em;
+		}
+
+		.HolyGrail-nav {
+		/* 导航放到最左边 */
+		order: -1;
+		list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 5%;
+                background-color: #c2f6ff;
+                position: absolute;
+                overflow: hidden;
+		}
+		.HolyGrail-nav div a {
+			display: block;
+                color: #555;
+                padding: 12px;
+                text-decoration: none;
+
+		}
+		.HolyGrail-nav div a:hover:not(.active){
+			background-color: #5584ff;
+            color: white;
+
+		}
+
+	</style>
+
+	<body class="HolyGrail">
+	<header>
+		低代码引擎
+	</header>
+	<div class="HolyGrail-body">
+	  <main class="HolyGrail-content">
+		主栏
+	  </main>
+	  <nav class="HolyGrail-nav">
+		<div><a href="#">大纲树</a></div>
+        <div><a href="#">组件库</a></div>
+        <div><a href="#">数据源</a></div>
+        <div><a href="#">源码面板</a></div>
+		</nav>
+	  <aside class="HolyGrail-ads">
+		副栏
+	  </aside>
+	</div>
+	<footer>
+		邮箱
+	</footer>
+</body>
+</html>
+
+

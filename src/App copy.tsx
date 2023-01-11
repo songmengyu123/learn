@@ -6,27 +6,42 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='main'>
+      <div className="header">
+        低代码引擎
       </div>
-      <h1>Vite + React111222</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className="content">
+        <div className="leftSide">
+          {/* <div>
+            <a href="#">大纲树</a>
+          </div>
+          <div>
+            <a href="#">组件库</a>
+          </div>
+          <div>
+            <a href="#">数据源</a>
+          </div>
+          <div>
+            <a href="#">源码面板</a>
+          </div> */}
+        </div>
+
+        <div className="componentPane">
+          
+        </div>
+
+
+        <div className="center">
+        主栏
+        </div>
+        
+        <div className="right">
+        副栏
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className="footer">
+        邮箱
+      </div>
     </div>
   )
 }

@@ -6,13 +6,26 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div style={{height:800}}>
-      <div style={{height: 48,backgroundColor:"#5584ff"}}>
-      1
+    <div className='body'>
+      <div className='top'>
+        top
       </div>
-
-      <div style={{height:"calc(100% - 48px)",backgroundColor:"blue"}}>
-
+      <div className='center'>
+        <div className="center-nav"> 
+          center-nav
+        </div>
+        <div className="componentPane">
+          componentPane
+        </div>
+        <div className="center-main">
+          center-main
+        </div>
+        <div className="center-rightside">
+          center-rightside
+        </div>
+      </div>
+      <div className='bottom'>
+        bottom
       </div>
     </div>
   )
